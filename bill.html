@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2><center>JAI MATA DI</center></h2>
+<hr width = "70%">
+<hr width = "70%">
+<font size= "5">
+<TABLE BORDER="1" align = "center" WIDTH = "70%">
+    <TR>
+      <TD>VEH. NO.</TD>
+      <TD>
+        <INPUT TYPE="TEXT" NAME="CAR NUMBER" SIZE="10" style="font-size:18pt;">
+      </TD>
+    </TR>
+    <TR>
+      <TD>VEH. TYPE</TD>
+      <TD><INPUT TYPE="TEXT" NAME="VEH. TYPE" SIZE="25"style="font-size:18pt;"></TD>
+    </TR>
+    <TR>
+        <TD>CHARGES</TD>
+        <TD><INPUT TYPE="NUMBER" NAME="CHARGES" SIZE="25"style="font-size:18pt;"></TD>
+      </TR>
+      <TR>
+        <TD>MATERIAL</TD>
+        <TD><INPUT TYPE="TEXT" NAME="MATERIAL" SIZE="25"style="font-size:18pt;"></TD>
+      </TR>
+      <TR>
+        <TD>PARTY REF.</TD>
+        <TD><INPUT TYPE="TEXT" NAME="PARTY. REF" SIZE="25"style="font-size:18pt;"></TD>
+      </TR>
+      <TR>
+        <TD>PAYMENT</TD>
+        <TD><INPUT TYPE="TEXT" NAME="PAYMENT" SIZE="25"style="font-size:18pt;"></TD>
+      </TR>
+      <TR>
+        <TD>DRIVER</TD>
+        <TD><input type="radio" name="DRIVER" value="IN" checked> IN<br>
+            <input type="radio" name="DRIVER" value="OUT"> OUT<br>
+        </TD>
+      </TR>
+      <TR>
+        <TD>GROSS WEIGHT</TD>
+        <TD><INPUT TYPE="NUMBER" NAME="GROSS" SIZE="25"style="font-size:18pt;">KG  <input type="date" name="DATE"style="font-size:18pt;"><br><input type="time" name="time" style="font-size:18pt;"></TD> 
+      </TR>
+      <TR>
+        <TD>TARE WEIGHT</TD>
+        <TD><INPUT TYPE="NUMBER" NAME="TARE" SIZE="25"style="font-size:18pt;">KG
+            <input type="date" name="DATE"style="font-size:18pt;"><br><input type="time" name="time" style="font-size:18pt;"></TD></TD>
+      </TR>
+      <TR>
+        <TD>NET WEIGHT</TD>
+        <TD><INPUT TYPE="NUMBER" NAME="NET" SIZE="25"style="font-size:18pt;">KG</TD>
+      </TR>
+  </TABLE>
+</font>
+  <hr width = "70%">
+  <hr width = "70%">
+  <CENTER><button class="button" style="vertical-align:middle" input type="button" value="Print" onclick="window.print()"><span>Print </span></button></CENTER>
+
+  <style>
+        .button {
+          display: inline-block;
+          border-radius: 4px;
+          background-color: #f4511e;
+          border: none;
+          color: #FFFFFF;
+          text-align: center;
+          font-size: 28px;
+          padding: 20px;
+          width: 200px;
+          transition: all 0.5s;
+          cursor: pointer;
+          margin: 5px;
+        }
+        
+        .button span {
+          cursor: pointer;
+          display: inline-block;
+          position: relative;
+          transition: 0.5s;
+        }
+        
+        .button span:after {
+          content: '\00bb';
+          position: absolute;
+          opacity: 0;
+          top: 0;
+          right: -20px;
+          transition: 0.5s;
+        }
+        
+        .button:hover span {
+          padding-right: 25px;
+        }
+        
+        .button:hover span:after {
+          opacity: 1;
+          right: 0;
+        }
+        </style>
+
+</body>
+</html>
